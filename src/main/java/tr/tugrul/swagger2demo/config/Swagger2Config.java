@@ -29,7 +29,8 @@ public class Swagger2Config implements WebMvcConfigurer {
                 .apis(RequestHandlerSelectors.any())
                 .paths(PathSelectors.any())
                 .build()
-                .apiInfo(apiInfo());
+                .apiInfo(apiInfo())
+                .forCodeGeneration(true);
     }
 
     private ApiInfo apiInfo() {
