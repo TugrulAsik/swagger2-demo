@@ -57,7 +57,7 @@ public class DemoController {
     @GetMapping("/hello-swagger2-response-entity")
     public ResponseEntity<DemoResponseDTO> helloSwaggerResponseEntity() {
         DemoResponseDTO responseDTO = DemoResponseDTO.builder()
-                .id(4L)
+                .id(3L)
                 .demo(Boolean.TRUE)
                 .someCurrencyField(new BigDecimal("323.123"))
                 .someStr("Swagger2 response entity Hello World!")
@@ -72,7 +72,7 @@ public class DemoController {
     @GetMapping("/hello-swagger2-api-ops")
     public RestResponse<DemoResponseDTO> helloSwaggerApiOps() {
         DemoResponseDTO responseDTO = DemoResponseDTO.builder()
-                .id(2L)
+                .id(4L)
                 .demo(Boolean.TRUE)
                 .someCurrencyField(new BigDecimal("999.123"))
                 .someStr("Swagger2 generic Hello World!")
